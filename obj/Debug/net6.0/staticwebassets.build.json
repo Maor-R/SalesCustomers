@@ -1,0 +1,46 @@
+{
+  "Version": 1,
+  "Hash": "/18Eh5TZTmuyyNFVAv0F9/iy0BXMr6jt4zccTTgoqYE=",
+  "Source": "SalesCustomers",
+  "BasePath": "_content/SalesCustomers",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\maor\\Desktop\\Asp.Net-Core-6.0-MVC-CRUD-Operations-with-EF-Core-main\\BankTransactions\\obj\\Debug\\net6.0\\scopedcss\\bundle\\SalesCustomers.styles.css",
+      "SourceId": "SalesCustomers",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\maor\\Desktop\\Asp.Net-Core-6.0-MVC-CRUD-Operations-with-EF-Core-main\\BankTransactions\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/SalesCustomers",
+      "RelativePath": "SalesCustomers.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\maor\\Desktop\\Asp.Net-Core-6.0-MVC-CRUD-Operations-with-EF-Core-main\\BankTransactions\\obj\\Debug\\net6.0\\scopedcss\\bundle\\SalesCustomers.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\maor\\Desktop\\Asp.Net-Core-6.0-MVC-CRUD-Operations-with-EF-Core-main\\BankTransactions\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SalesCustomers.bundle.scp.css",
+      "SourceId": "SalesCustomers",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\maor\\Desktop\\Asp.Net-Core-6.0-MVC-CRUD-Operations-with-EF-Core-main\\BankTransactions\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/SalesCustomers",
+      "RelativePath": "SalesCustomers.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\maor\\Desktop\\Asp.Net-Core-6.0-MVC-CRUD-Operations-with-EF-Core-main\\BankTransactions\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SalesCustomers.bundle.scp.css"
+    }
+  ]
+}

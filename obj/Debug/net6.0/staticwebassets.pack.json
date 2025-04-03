@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\maor\\Desktop\\Asp.Net-Core-6.0-MVC-CRUD-Operations-with-EF-Core-main\\BankTransactions\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\SalesCustomers.bundle.scp.css",
+      "PackagePath": "staticwebassets\\SalesCustomers.bundle.scp.css"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.SalesCustomers.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.SalesCustomers.props",
+      "PackagePath": "build\\SalesCustomers.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.SalesCustomers.props",
+      "PackagePath": "buildMultiTargeting\\SalesCustomers.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.SalesCustomers.props",
+      "PackagePath": "buildTransitive\\SalesCustomers.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

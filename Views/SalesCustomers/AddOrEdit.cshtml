@@ -1,0 +1,233 @@
+﻿@model SalesCustomer.Models.SalesCustomers
+
+@{
+    ViewData["Title"] = "SalesCustomers";
+}
+
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <h1>SalesCustomers</h1>
+        <form asp-action="AddOrEdit" autocomplete="off">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CustomerID" />
+   
+    
+            <div class="form-group">
+                <label asp-for="CustomerName" class="control-label"></label>
+                <input asp-for="CustomerName" class="form-control" />
+                <span asp-validation-for="CustomerName" class="text-danger"></span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="BillToCustomerID" class="control-label"></label>
+                        <input asp-for="BillToCustomerID" class="form-control" />
+                        <span asp-validation-for="BillToCustomerID" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="CustomerCategoryID" class="control-label"></label>
+                        <input asp-for="CustomerCategoryID" class="form-control" />
+                        <span asp-validation-for="CustomerCategoryID" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="BuyingGroupID" class="control-label"></label>
+                        <input asp-for="BuyingGroupID" class="form-control" />
+                        <span asp-validation-for="BuyingGroupID" class="text-danger"></span>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="PrimaryContactPersonID" class="control-label"></label>
+                        <input asp-for="PrimaryContactPersonID" class="form-control" />
+                        <span asp-validation-for="PrimaryContactPersonID" class="text-danger"></span>
+                    </div>
+                </div>      <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="AlternateContactPersonID" class="control-label"></label>
+                        <input asp-for="AlternateContactPersonID" class="form-control" />
+                        <span asp-validation-for="AlternateContactPersonID" class="text-danger"></span>
+                    </div>
+                </div>      <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="DeliveryMethodID" class="control-label"></label>
+                        <input asp-for="DeliveryMethodID" class="form-control" />
+                        <span asp-validation-for="DeliveryMethodID" class="text-danger"></span>
+                    </div>
+                </div>      <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="DeliveryCityID" class="control-label"></label>
+                        <input asp-for="DeliveryCityID" class="form-control" />
+                        <span asp-validation-for="DeliveryCityID" class="text-danger"></span>
+                    </div>
+                </div>      <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="PostalCityID" class="control-label"></label>
+                        <input asp-for="PostalCityID" class="form-control" />
+                        <span asp-validation-for="PostalCityID" class="text-danger"></span>
+                    </div>
+                </div>      <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="BuyingGroupID" class="control-label"></label>
+                        <input asp-for="BuyingGroupID" class="form-control" />
+                        <span asp-validation-for="BuyingGroupID" class="text-danger"></span>
+                    </div>
+                </div>      <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="CreditLimit" class="control-label"></label>
+                        <input asp-for="CreditLimit" class="form-control" />
+                        <span asp-validation-for="CreditLimit" class="text-danger"></span>
+                    </div>
+                </div>      <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="AccountOpenedDate" class="control-label"></label>
+                        <input asp-for="AccountOpenedDate" class="form-control" />
+                        <span asp-validation-for="AccountOpenedDate" class="text-danger"></span>
+                    </div>
+                </div>      <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="StandardDiscountPercentage" class="control-label"></label>
+                        <input asp-for="StandardDiscountPercentage" class="form-control" />
+                        <span asp-validation-for="StandardDiscountPercentage" class="text-danger"></span>
+                    </div>
+                </div>      <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="IsStatementSent" class="control-label"></label>
+                        <input asp-for="IsStatementSent" class="form-control" />
+                        <span asp-validation-for="IsStatementSent" class="text-danger"></span>
+                    </div>
+                </div>      <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="IsOnCreditHold" class="control-label"></label>
+                        <input asp-for="IsOnCreditHold" class="form-control" />
+                        <span asp-validation-for="IsOnCreditHold" class="text-danger"></span>
+                    </div>
+                </div>      <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="PaymentDays" class="control-label"></label>
+                        <input asp-for="PaymentDays" class="form-control" />
+                        <span asp-validation-for="PaymentDays" class="text-danger"></span>
+                    </div>
+                </div>      <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="PhoneNumber" class="control-label"></label>
+                        <input asp-for="PhoneNumber" class="form-control" />
+                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                    </div>
+                </div>      <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="FaxNumber" class="control-label"></label>
+                        <input asp-for="FaxNumber" class="form-control" />
+                        <span asp-validation-for="FaxNumber" class="text-danger"></span>
+                    </div>
+                </div>      <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="DeliveryRun" class="control-label"></label>
+                        <input asp-for="DeliveryRun" class="form-control" />
+                        <span asp-validation-for="DeliveryRun" class="text-danger"></span>
+                    </div>
+                </div>      <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="RunPosition" class="control-label"></label>
+                        <input asp-for="RunPosition" class="form-control" />
+                        <span asp-validation-for="RunPosition" class="text-danger"></span>
+                    </div>
+                </div>      <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="WebsiteURL" class="control-label"></label>
+                        <input asp-for="WebsiteURL" class="form-control" />
+                        <span asp-validation-for="WebsiteURL" class="text-danger"></span>
+                    </div>
+                </div>      <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="DeliveryAddressLine1" class="control-label"></label>
+                        <input asp-for="DeliveryAddressLine1" class="form-control" />
+                        <span asp-validation-for="DeliveryAddressLine1" class="text-danger"></span>
+                    </div>
+                </div>      <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="DeliveryAddressLine2" class="control-label"></label>
+                        <input asp-for="DeliveryAddressLine2" class="form-control" />
+                        <span asp-validation-for="DeliveryAddressLine2" class="text-danger"></span>
+                    </div>
+                </div>      <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="DeliveryPostalCode" class="control-label"></label>
+                        <input asp-for="DeliveryPostalCode" class="form-control" />
+                        <span asp-validation-for="DeliveryPostalCode" class="text-danger"></span>
+                    </div>
+                </div>      
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="PostalAddressLine1" class="control-label"></label>
+                        <input asp-for="PostalAddressLine1" class="form-control" />
+                        <span asp-validation-for="PostalAddressLine1" class="text-danger"></span>
+                    </div>
+                </div>
+
+
+                     <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="PostalAddressLine2" class="control-label"></label>
+                        <input asp-for="PostalAddressLine2" class="form-control" />
+                        <span asp-validation-for="PostalAddressLine2" class="text-danger"></span>
+                    </div>
+                </div>     <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="PostalPostalCode" class="control-label"></label>
+                        <input asp-for="PostalPostalCode" class="form-control" />
+                        <span asp-validation-for="PostalPostalCode" class="text-danger"></span>
+                    </div>
+                </div>
+                     <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="LastEditedBy" class="control-label"></label>
+                        <input asp-for="LastEditedBy" class="form-control" />
+                        <span asp-validation-for="LastEditedBy" class="text-danger"></span>
+                    </div>
+                </div>    
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="ValidFrom" class="control-label"></label>
+                        <input asp-for="ValidFrom" class="form-control" />
+                        <span asp-validation-for="ValidFrom" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label asp-for="ValidTo" class="control-label"></label>
+                        <input asp-for="ValidTo" class="form-control" />
+                        <span asp-validation-for="ValidTo" class="text-danger"></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row mt-2">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="submit" value="Submit" class="btn btn-primary w-100" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <a asp-action="Index" class="btn btn-secondary  w-100">View All</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}
